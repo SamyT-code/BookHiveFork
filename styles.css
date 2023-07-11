@@ -1,0 +1,177 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #b6d0c7;
+}
+
+/* Header styles */
+header {
+  background-color: #507963; /* Dark Blue color */
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero section styles */
+#hero {
+  background-image: url('hero.jpg');
+  background-size: cover;
+  text-align: center;
+  padding: 100px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #242124; /* Dark Blue color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Login section styles */
+#login {
+  text-align: right;
+  padding: 20px;
+}
+
+#login form {
+  display: inline-block;
+}
+
+#login input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 200px;
+}
+
+/* Books section styles */
+#books {
+  padding: 50px;
+  text-align: center;
+}
+
+.book {
+  display: inline-block;
+  width: 200px;
+  margin: 20px;
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #507963; /* Dark Blue color */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.header {
+  background-color: #507963;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation Menu */
+.nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* New Book Request Form */
+.request-form {
+  padding: 20px;
+}
+
+.request-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.request-form input[type="text"],
+.request-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.request-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Additional Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b6d0c7;
+}
