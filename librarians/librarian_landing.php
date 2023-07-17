@@ -1,6 +1,6 @@
 <?php
 session_start(); // Start the session
-include_once 'db.php'; // Code to connect to the databse, initializes $conn
+include_once '../db.php'; // Code to connect to the databse, initializes $conn
 
 // Check if the student is logged in
 if (!isset($_SESSION['email'])) {
@@ -38,10 +38,10 @@ mysqli_close($conn);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Librarian Landing</title>
     <link rel="icon" type="image/x-icon" href="images/bee.png">
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../css/main.css" /> <!-- Path references upper/css to use css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="../css/landing.css" />
 </head>
 <body>
     <!-- Logout Button START -->
