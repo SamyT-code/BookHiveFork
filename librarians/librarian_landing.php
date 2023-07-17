@@ -39,6 +39,7 @@ mysqli_close($conn);
     <title>Librarian Landing</title>
     <link rel="icon" type="image/x-icon" href="images/bee.png">
     <link rel="stylesheet" href="../css/main.css" /> <!-- Path references upper/css to use css -->
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../css/landing.css" />
@@ -47,7 +48,7 @@ mysqli_close($conn);
     <!-- Logout Button START -->
     <div class="container">
         <div class="logout-btn">
-            <a href="logout.php" class="logout-btn-text">Logout</a>
+            <a href="../logout.php" class="logout-btn-text">Logout</a>
         </div>
     </div>
     <!-- Logout Button END -->

@@ -48,7 +48,7 @@ mysqli_close($conn);
     <!-- Logout Button START -->
     <div class="container">
         <div class="logout-btn">
-            <a href="logout.php" class="logout-btn-text">Logout</a>
+            <a href="../logout.php" class="logout-btn-text">Logout</a>
         </div>
     </div>
     <!-- Logout Button END -->
