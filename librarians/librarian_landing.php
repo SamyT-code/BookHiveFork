@@ -2,17 +2,17 @@
 session_start(); // Start the session
 include_once '../db.php'; // Code to connect to the databse, initializes $conn
 
-// Check if the student is logged in
+// Check if the librarian is logged in
 if (!isset($_SESSION['email'])) {
-    // Redirect to login page if the student is not logged in
+    // Redirect to login page if the librarian is not logged in
     header('Location: librarian_login.php');
     exit();
 }
 
-// Retrieve the student's information from session variables
+// Retrieve the librarian's information from session variables
 $email = $_SESSION['email'];
 
-// Perform a query to fetch first and last name from the Members table
+// Perform a query to fetch first and last name from the Librarians table
 $query = "SELECT first_name, last_name FROM Librarians WHERE email='$email'";
 $result = mysqli_query($conn, $query);
 
@@ -54,8 +54,8 @@ mysqli_close($conn);
 
     <div class="container">
         <h1>Welcome, librarian <?php echo htmlspecialchars($firstName . " " . $lastName); ?></h1>
-        <!-- Add your student landing page content here -->
-        <h2>Someone add librarian landing page content here...</h2>
+        
+        
     </div>
 </body>
 </html>
