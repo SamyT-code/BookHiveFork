@@ -1,5 +1,5 @@
 <?php 
- // Replace with your MySQL database credentials, if you midify this file, do NOT push it
+ // Replace with your MySQL database credentials, if you modify this file, do NOT push it
  $db_host = "localhost";
  $db_user = "root"; // Default username
  $db_pass = "";     // Default password is empty

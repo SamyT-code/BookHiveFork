@@ -1,7 +1,7 @@
 <?php
 session_start(); // Start the session
 
-include_once 'db.php'; // Code to connect to the databse, initializes $conn
+include_once '../db.php'; // Code to connect to the databse, initializes $conn
 
 // Initialize variables
 $email = $password = $msg = $err = "";
@@ -39,9 +39,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Login</title>
     <link rel="icon" type="image/x-icon" href="images/bee.png">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../css/main.css"> <!-- Path references upper/css to use css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="../css/login.css" />
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
