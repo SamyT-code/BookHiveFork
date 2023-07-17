@@ -41,19 +41,22 @@ CREATE TABLE Members(
 );
 
 INSERT INTO Members (first_name, last_name, email, password)
-VALUES ('Alice', 'Johnson', 'alice.johnson@example.com', 'password123');
+VALUES ('m_first', 'm_last', 'member@bookhive.com', '123');
 
 INSERT INTO Members (first_name, last_name, email, password)
-VALUES ('Robert', 'Davis', 'robert.davis@example.com', 'secret123');
+VALUES ('Alice', 'Johnson', 'alice.johnson@bookhive.com', 'password123');
 
 INSERT INTO Members (first_name, last_name, email, password)
-VALUES ('Michelle', 'Anderson', 'michelle.anderson@example.com', 'mysecurepass');
+VALUES ('Robert', 'Davis', 'robert.davis@bookhive.com', 'secret123');
 
 INSERT INTO Members (first_name, last_name, email, password)
-VALUES ('Daniel', 'Wilson', 'daniel.wilson@example.com', 'pass123word');
+VALUES ('Michelle', 'Anderson', 'michelle.anderson@bookhive.com', 'mysecurepass');
 
 INSERT INTO Members (first_name, last_name, email, password)
-VALUES ('Sophia', 'Brown', 'sophia.brown@example.com', 'strongpassword');
+VALUES ('Daniel', 'Wilson', 'daniel.wilson@bookhive.com', 'pass123word');
+
+INSERT INTO Members (first_name, last_name, email, password)
+VALUES ('Sophia', 'Brown', 'sophia.brown@bookhive.com', 'strongpassword');
 
 -- Librarians Table **************************************************************************************************************************************
 
@@ -66,16 +69,19 @@ CREATE TABLE Librarians(
 ); 
 
 INSERT INTO Librarians (first_name, last_name, email, password)
-VALUES ('Ethan', 'Smith', 'ethan.smith@example.com', 'securepass123');
+VALUES ('l_first', 'l_last', 'librarian@bookhive.com', '123');
 
 INSERT INTO Librarians (first_name, last_name, email, password)
-VALUES ('Olivia', 'Taylor', 'olivia.taylor@example.com', 'password789');
+VALUES ('Ethan', 'Smith', 'ethan.smith@bookhive.com', 'securepass123');
 
 INSERT INTO Librarians (first_name, last_name, email, password)
-VALUES ('Liam', 'Wilson', 'liam.wilson@example.com', 'strongpass321');
+VALUES ('Olivia', 'Taylor', 'olivia.taylor@bookhive.com', 'password789');
 
 INSERT INTO Librarians (first_name, last_name, email, password)
-VALUES ('Ava', 'Anderson', 'ava.anderson@example.com', 'mypassword456');
+VALUES ('Liam', 'Wilson', 'liam.wilson@bookhive.com', 'strongpass321');
 
 INSERT INTO Librarians (first_name, last_name, email, password)
-VALUES ('Noah', 'Brown', 'noah.brown@example.com', 'password1234');
+VALUES ('Ava', 'Anderson', 'ava.anderson@bookhive.com', 'mypassword456');
+
+INSERT INTO Librarians (first_name, last_name, email, password)
+VALUES ('Noah', 'Brown', 'noah.brown@bookhive.com', 'password1234');
