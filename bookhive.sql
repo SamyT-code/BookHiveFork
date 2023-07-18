@@ -22,9 +22,6 @@ INSERT INTO Books (author, title, genre, description)
 VALUES ('Jane Smith', 'Mystery at Midnight', 'Mystery', 'A suspenseful tale of crime and investigation.');
 
 INSERT INTO Books (author, title, genre, description)
-VALUES ('George Orwell', '1984', 'Dystopian Fiction', 'A classic novel depicting a totalitarian society.');
-
-INSERT INTO Books (author, title, genre, description)
 VALUES ('Ernest Hemingway', 'The Sun Also Rises', 'Fiction', 'A story of disillusioned expatriates in post-World War I Europe.');
 
 INSERT INTO Books (author, title, genre, description)

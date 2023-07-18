@@ -48,15 +48,35 @@ mysqli_close($conn);
     <!-- Logout Button START -->
     <div class="container">
         <div class="logout-btn">
-            <a href="../logout.php" class="logout-btn-text">Logout</a>
-        </div>
-    </div>
-    <!-- Logout Button END -->
+            <a href="logout.php" class="logout-btn-text">Logout</a>
+        </div><!-- Logout Button END -->
+        <header>
+            <h1>Welcome, student <?php echo htmlspecialchars($firstName . " " . $lastName); ?></h1>
+        </header>
 
-    <div class="container">
-        <h1>Welcome, student <?php echo htmlspecialchars($firstName . " " . $lastName); ?></h1>
-        <!-- Add your student landing page content here -->
-        <h2>Someone add student landing page content here...</h2>
+        <header>
+            <h2>Buzz into Knowledge: Unleash Your Inner Bookworm!</h2>
+        </header>
+
+        <nav>
+            <header>
+                <h3><a href="#">Home</a></h3>
+            </header>
+            <header>
+                <h3><a href="#">Profile</a></h3>
+            </header>
+            <header>
+                <h3><a href="#">Books</a></h3>
+            </header>
+            <header>
+                <h3><a href="#">Reccommendations</a></h3>
+            </header>
+        </nav>
+
+        <div class="container">
+            <!-- Add your student landing page content here -->
+        </div>
     </div>
 </body>
 </html>
+
