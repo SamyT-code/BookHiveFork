@@ -12,7 +12,7 @@ CREATE TABLE Books(
     title varchar(255) NOT NULL,
     genre varchar(255) NOT NULL,
     description varchar(255) NOT NULL,
-    checked_out_by varchar(255)
+    checked_out_by int NOT NULL DEFAULT -1
 );
 
 INSERT INTO Books (author, title, genre, description)
@@ -134,3 +134,13 @@ VALUES ('Ava', 'Anderson', 'ava.anderson@bookhive.com', 'mypassword456');
 
 INSERT INTO Librarians (first_name, last_name, email, password)
 VALUES ('Noah', 'Brown', 'noah.brown@bookhive.com', 'password1234');
+
+-- Adding books to Alice Johnson (id = 2) ***********************************************************************************
+INSERT INTO Books (author, title, genre, description, checked_out_by)
+VALUES ('Alicia author 1', 'Alicia title 1', 'Alicia genre 1', 'Alicia description 1', 2);
+
+INSERT INTO Books (author, title, genre, description, checked_out_by)
+VALUES ('Alicia author 2', 'Alicia title 2', 'Alicia genre 2', 'Alicia description 2', 2);
+
+INSERT INTO Books (author, title, genre, description, checked_out_by)
+VALUES ('Alicia author 3', 'Alicia title 3', 'Alicia genre 3', 'Alicia description 3', 2);
