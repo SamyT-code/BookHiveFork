@@ -1,5 +1,4 @@
 <?php
-
 session_start(); // Start the session
 
 include_once '../db.php'; // Code to connect to the database, initializes $conn
@@ -40,27 +39,55 @@ $remaining_slots = $max_books - $number_of_books;
 <html>
 <head>
     <title>My Books</title>
+    <link rel="icon" type="image/x-icon" href="../images/bee.png">
+    <link rel="stylesheet" href="../css/main.css" /> <!-- Path references upper/css to use css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/landing.css" />
+    <link rel="stylesheet" href="../css/mybooks.css" />
 </head>
 <body>
-    <h1>My Books</h1>
+    <!-- Logout Button START -->
+    <div class="container">
+    <div class="logout-btn">
+        <a href="../logout.php" class="logout-btn-text">Logout</a>
+    </div><!-- Logout Button END -->
     <?php
-    if ($number_of_books > 0) {
-        echo "<p>You have $number_of_books book(s) checked out:</p>";
-        while ($row = $result->fetch_assoc()) {
-            echo "<p><strong>Title:</strong> " . $row['title'] . "<br>";
-            echo "<strong>Author:</strong> " . $row['author'] . "<br>";
-            echo "<strong>Genre:</strong> " . $row['genre'] . "<br>";
-            echo "<strong>Description:</strong> " . $row['description'] . "</p>";
-        }
-    } else {
-        echo "<p>You have no books checked out.</p>";
-    }
-
-    echo "<p>You can check out up to $max_books books. You have $remaining_slots slot(s) remaining.</p>";
+        include_once 'student_navbar.php'; // Code to add navbar
     ?>
+    <div class="container">
+        <h1>My Books</h1>
+        <?php
+        if ($number_of_books > 0) {
+            echo '<div class="row">';
+            while ($row = $result->fetch_assoc()) {
+                echo '<div class="col-sm-6">';
+                echo '<div class="book-card">';
+                echo '<p><strong>Title:</strong> ' . $row['title'] . '</p>';
+                echo '<p><strong>Author:</strong> ' . $row['author'] . '</p>';
+                echo '<p><strong>Genre:</strong> ' . $row['genre'] . '</p>';
+                echo '<p><strong>Description:</strong> ' . $row['description'] . '</p>';
+                echo '</div>';
+                echo '</div>';
+            }
+            echo '</div>';
+        } else {
+            echo '<p>You have no books checked out.</p>';
+        }
 
-    <!-- Add any additional content or features you want to display on the landing page -->
+        echo '<div class="available-books">';
+        echo "<p>You can check out up to $max_books books. You have $remaining_slots slot(s) remaining.</p>";
+        echo "<p>To return a book, simply hand it over to a librarian and he or she will mark it as returned :)</p>";
+        echo '</div>';
+        ?>
 
+        <!-- Add any additional content or features you want to display on the landing page -->
+
+    </div><!-- .container -->
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
 
