@@ -63,10 +63,10 @@ mysqli_close($conn);
                 <h3><a href="#">Home</a></h3>
             </header>
             <header>
-                <h3><a href="#">Profile</a></h3>
+                <h3><a href="mybooks.php">My Books</a></h3>
             </header>
             <header>
-                <h3><a href="#">Books</a></h3>
+                <h3><a href="#">Search Books</a></h3>
             </header>
             <header>
                 <h3><a href="#">Reccommendations</a></h3>
