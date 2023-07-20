@@ -9,22 +9,7 @@ if (!isset($_SESSION['email'])) {
     exit();
 }
 
-// Retrieve the librarian's information from session variables
-$email = $_SESSION['email'];
-
-// Perform a query to fetch first and last name from the Librarians table
-$query = "SELECT first_name, last_name FROM Librarians WHERE email='$email'";
-$result = mysqli_query($conn, $query);
-
-if (mysqli_num_rows($result) === 1) {
-    $row = mysqli_fetch_assoc($result);
-    $firstName = $row['first_name'];
-    $lastName = $row['last_name'];
-} else {
-    // Handle error if the user information is not found
-    $firstName = "Unknown";
-    $lastName = "User";
-}
+// add PHP
 
 // Close the connection
 mysqli_close($conn);
@@ -36,12 +21,11 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Librarian Landing</title>
+    <title>Inventory Management</title>
     <link rel="icon" type="image/x-icon" href="images/bee.png">
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/main.css" />
 </head>
-
 <body>
     <header>
         <h1>Bookhive</h1>
@@ -56,6 +40,7 @@ mysqli_close($conn);
                     </div>
                     <!-- Logout Button END -->
                 </li>
+                <li><a href="librarian_landing.php">Librarian Home</a></li>
                 <li><a href="librarian_inventory_mgmt.php">Manage Inventory</a></li>
                 <li><a href="librarian_checkout.php">Checked Out Items</a></li>
             </ul>
@@ -63,9 +48,9 @@ mysqli_close($conn);
     </header>
 
     <div class="container">
-        <h3 class="welcome-message"> Welcome, librarian <?php echo htmlspecialchars($firstName . " " . $lastName); ?></h3>
-        
-        
+        <h3 class="welcome-message">View and manage library inventory</h3>
+
+        <h3 class="welcome-message">[table goes here]</h3>
     </div>
 
     <footer>

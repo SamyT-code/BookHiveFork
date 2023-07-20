@@ -80,3 +80,8 @@
     font-weight: 600; 
     border-radius: 4px 4px 4px 4px;
 }
+
+.welcome-message{
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
