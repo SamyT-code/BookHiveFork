@@ -9,7 +9,24 @@ if (!isset($_SESSION['email'])) {
     exit();
 }
 
-// add PHP
+// retrieve all books and display in table
+$email = $_SESSION['email'];
+
+// Perform a query to fetch librarian_id from the Librarians table
+$query = "SELECT librarian_id FROM Librarians WHERE email='$email'";
+$result = mysqli_query($conn, $query);
+
+if (mysqli_num_rows($result) === 1) {
+    $row = mysqli_fetch_assoc($result);
+    $user_id = $row['librarian_id'];
+}
+
+$sql = "SELECT * FROM Books";
+$result = $conn->query($sql);
+
+// add book feature (one by one)
+
+// remove book feature (one by one) thinking to do a remove button in each table row
 
 // Close the connection
 mysqli_close($conn);
@@ -25,6 +42,7 @@ mysqli_close($conn);
     <link rel="icon" type="image/x-icon" href="images/bee.png">
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/tables.css" />
 </head>
 <body>
     <header>
@@ -47,10 +65,28 @@ mysqli_close($conn);
         </nav>
     </header>
 
-    <div class="container">
+    <div>
         <h3 class="welcome-message">View and manage library inventory</h3>
 
-        <h3 class="welcome-message">[table goes here]</h3>
+        <table>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Remove</th>
+            </tr>
+            <?php
+            while ($row = $result->fetch_assoc()) {
+                echo "<tr><td>" . $row['book_id'] . "</td>";
+                echo "<td>" . $row['title'] . "</td>";
+                echo "<td>" . $row['author'] . "</td>";
+                echo "<td>" . $row['genre'] . "</td>";
+                echo "<td><button class='remove-btn'>x</button></td></tr>";
+            }
+            ?>
+            
+        </table>
     </div>
 
     <footer>
