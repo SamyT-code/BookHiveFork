@@ -58,13 +58,13 @@ VALUES
 
 INSERT INTO Books (author, title, genre, description)
 VALUES
-    ('Michael Lewis', 'Moneyball: The Art of Winning an Unfair Game', 'Sports', 'Lewis explores the innovative use of data and analytics in baseball, focusing on the Oakland Athletics and their manager, Billy Beane.'),
+    ('Michael Lewis', 'Moneyball: The Art of Winning an Unfair Game', 'Sport', 'Lewis explores the innovative use of data and analytics in baseball, focusing on the Oakland Athletics and their manager, Billy Beane.'),
     ('Phil Knight', 'Shoe Dog: A Memoir by the Creator of Nike', 'Sports', 'Knight shares the story of Nikes founding and his personal journey in building one of the worlds most iconic sports brands.'),
-    ('Bill Simmons', 'The Book of Basketball: The NBA According to The Sports Guy', 'Sports', 'Simmons presents an entertaining and insightful look at the history, players, and cultural impact of the NBA.'),
-    ('Jon Krakauer', 'Into the Wild', 'Sports', 'Krakauer tells the true story of Chris McCandless, a young man who ventured into the Alaskan wilderness to live a solitary and nomadic life.'),
-    ('Andre Agassi', 'Open', 'Sports', 'Agassis memoir chronicles his life and career as a professional tennis player, providing a candid account of his successes, struggles, and personal growth.'),
-    ('Laura Hillenbrand', 'Seabiscuit: An American Legend', 'Sports', 'Hillenbrand recounts the inspiring story of Seabiscuit, a racehorse that captured the hearts of Americans during the Great Depression.'),
-    ('Walter Iooss Jr.', 'Rare Air: Michael on Michael', 'Sports', 'Iooss captures iconic photographs of Michael Jordan and presents a visual journey through the life and career of one of basketballs greatest players.');
+    ('Bill Simmons', 'The Book of Basketball: The NBA According to The Sports Guy', 'Sport', 'Simmons presents an entertaining and insightful look at the history, players, and cultural impact of the NBA.'),
+    ('Jon Krakauer', 'Into the Wild', 'Sport', 'Krakauer tells the true story of Chris McCandless, a young man who ventured into the Alaskan wilderness to live a solitary and nomadic life.'),
+    ('Andre Agassi', 'Open', 'Sport', 'Agassis memoir chronicles his life and career as a professional tennis player, providing a candid account of his successes, struggles, and personal growth.'),
+    ('Laura Hillenbrand', 'Seabiscuit: An American Legend', 'Sport', 'Hillenbrand recounts the inspiring story of Seabiscuit, a racehorse that captured the hearts of Americans during the Great Depression.'),
+    ('Walter Iooss Jr.', 'Rare Air: Michael on Michael', 'Sport', 'Iooss captures iconic photographs of Michael Jordan and presents a visual journey through the life and career of one of basketballs greatest players.');
 
 INSERT INTO Books (author, title, genre, description)
 VALUES

@@ -79,7 +79,7 @@ mysqli_close($conn);
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="card-option">
-                        <a href="#" style="font-size: 24px;">Recommendations</a>
+                        <a href="recommendations.php" style="font-size: 24px;">Recommendations</a>
                     </div>
                 </div>
             </div>
