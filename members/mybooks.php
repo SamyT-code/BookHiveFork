@@ -76,7 +76,7 @@ $remaining_slots = $max_books - $number_of_books;
         }
 
         echo '<div class="available-books">';
-        echo "<p>You can check out up to $max_books books. You have $remaining_slots slot(s) remaining.</p>";
+        echo "<p>You can check out up to $max_books books. You have $remaining_slots book(s) remaining.</p>";
         echo "<p>To return a book, simply hand it over to a librarian and he or she will mark it as returned :)</p>";
         echo '</div>';
         ?>
