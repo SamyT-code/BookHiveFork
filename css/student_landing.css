@@ -29,5 +29,13 @@ nav {
     font-size: 24px;
 }
 .card-option:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 5px solid #507963;
+    color: #507963;
+    transition: border 0.2s ease;
+}
+
+a {
+    color: #507963;
+    font-weight: bold;
 }

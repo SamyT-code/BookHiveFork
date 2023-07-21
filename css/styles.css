@@ -18,6 +18,8 @@ header {
   background-color: #507963; /* Dark Blue color */
   color: #fff;
   padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 h1 {
