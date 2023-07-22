@@ -57,11 +57,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <form class="form-signin" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
             <h4>Email</h4>
-            <input type="email" class="form-control" name="email" placeholder="Enter email" maxlength="255" required>
+            <input type="email" class="form-control" name="email" placeholder="Enter email (ex: ethan.smith@bookhive.com)" maxlength="255" required>
             <span class="error"> * <?php echo $email == "" ? 'Email is required!' : ''; ?> </span><br><br>
             
             <h4>Password</h4>
-            <input type="password" class="form-control" name="password" placeholder="Enter password" maxlength="255" required>
+            <input type="password" class="form-control" name="password" placeholder="Enter password (ex: securepass123)" maxlength="255" required>
             <span class="error"> * <?php echo $password == "" ? 'Password is required!' : ''; ?> </span><br>
 
             <br><br>
