@@ -1,5 +1,6 @@
 # BookHive
 Software solution to a Library Management System, with implementation of ML and NLP.
+Deployment website (requires Samy to run XAMPP in his machine which is being used as a server with ngrok): https://272f-173-206-86-138.ngrok-free.app/bookhive/Bookhive/
 
 # Authors
 - Lara Lim #300163562 (llim067@uottawa.ca)
