@@ -1,4 +1,10 @@
 #!/usr/bin/env python
+
+#Natural Language Processing and ML adapted for library implementation 
+#from Text Classification With Python tutorial
+#Demonstrated by Richard Gruss: https://www.youtube.com/watch?v=EfEW3_RLnGA&t=34s
+#Noted in references of Phase 3 Report
+
 import os
 import argparse
 import random

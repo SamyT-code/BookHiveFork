@@ -49,10 +49,10 @@ if (!isset($_SESSION['email'])) {
             if(isset($_POST["thoughts"])){
                 $userThoughts = $_POST["thoughts"];
                 if (!empty($userThoughts)){
-                    $a = escapeshellcmd('python auto-categorization.py "' . $userThoughts . '"');
-                    $output = shell_exec($a);
-                    $output = trim($output);
                     
+                    $a = escapeshellcmd('python auto-categorization.py "' . $userThoughts . '"');
+                    $output = shell_exec($a); //calling the python NLP script
+                    $output = trim($output);
 
                     $sql = "SELECT * FROM Books WHERE genre LIKE '$output'";
                     $result = mysqli_query($conn, $sql);
@@ -68,10 +68,6 @@ if (!isset($_SESSION['email'])) {
                 }
 
             }
-    
-            
-
-
         }
 
         function displayBooks($result) {
