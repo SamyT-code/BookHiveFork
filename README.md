@@ -11,6 +11,6 @@
 - Click on Create button
 - Go to SQL tab to write queries
 
-Libraries  required for installation:
+# Libraries  required for installation:
 - pip install nltk
 - pip install scikit-learn
