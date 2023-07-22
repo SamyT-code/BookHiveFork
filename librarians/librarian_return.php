@@ -111,9 +111,8 @@ if (isset($_POST['change_status'])) {
     <link rel="stylesheet" href="../css/main.css" /> <!-- Path references upper/css to use css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../css/landing.css" />
 </head>
-<body>
+<body style="background-color: #b6d0c7">
     <!-- Logout Button START -->
     <div class="container">
         <div class="logout-btn">
@@ -124,14 +123,14 @@ if (isset($_POST['change_status'])) {
             include_once 'librarian_navbar.php';
         ?>
         
-        <h1>Return Books</h1>
+        <h1 style="font-weight: bold">Return Books</h1>
 
         <!-- Search Bar -->
         <form class="form-inline" action="librarian_return.php" method="GET">
             <div class="form-group">
                 <input type="text" name="search" class="form-control" placeholder="Search by author, title, or description" size="50">
             </div>
-            <button type="submit" class="btn btn-primary">Search</button>
+            <button type="submit" class="form-btn">Search</button>
         </form>
 
         <!-- Filter Options -->
@@ -159,7 +158,7 @@ if (isset($_POST['change_status'])) {
                 </select>
             </div>
 
-            <button type="submit" class="btn btn-primary">Apply Filters</button>
+            <button type="submit" class="form-btn">Apply Filters</button>
         </form>
 
         <!-- Display Applied Filters -->

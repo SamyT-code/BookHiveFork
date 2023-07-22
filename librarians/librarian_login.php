@@ -75,7 +75,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <br><br>
             <button class="btn btn-lg btn-primary btn-block btn-warning" type="submit" name="login">Login</button>
         </form>
-
     </div>
 
 </body>

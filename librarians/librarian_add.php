@@ -45,9 +45,8 @@ if (isset($_POST['add_book'])) {
     <link rel="stylesheet" href="../css/main.css" /> <!-- Path references upper/css to use css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../css/landing.css" />
 </head>
-<body>
+<body style="background-color: #b6d0c7">
     <!-- Logout Button START -->
     <div class="container">
         <div class="logout-btn">
@@ -58,7 +57,7 @@ if (isset($_POST['add_book'])) {
             include_once 'librarian_navbar.php';
         ?>
 
-        <h1>Add Book</h1>
+        <h1 style="font-weight: bold">Add Book</h1>
 
         <!-- Book Form -->
         <form action="" method="POST">
@@ -78,7 +77,7 @@ if (isset($_POST['add_book'])) {
                 <label for="genre">Genre:</label>
                 <input type="text" name="genre" class="form-control" required>
             </div>
-            <button type="submit" class="btn btn-primary" name="add_book">Add Book</button>
+            <button type="submit" class="form-btn" name="add_book">Add Book</button>
         </form>
 
         <!-- Add any additional content or features you want to display on the page -->

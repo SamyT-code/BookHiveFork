@@ -85,3 +85,28 @@
     font-family: Arial, sans-serif;
     margin: 10px;
 }
+
+/* Overwriting bootstrap buttons to use custom */
+.btn, .btn-primary {
+  background-color: transparent;
+  color: initial;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Custom form button */
+.form-btn {
+    color: #fff;
+    background-color: #242124;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.form-btn:hover {
+    background-color: #507963;
+}
