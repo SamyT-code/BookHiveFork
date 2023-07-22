@@ -134,32 +134,34 @@ if (isset($_POST['change_status'])) {
         </form>
 
         <!-- Filter Options -->
-        <h2>Filter Options:</h2>
-        <form action="librarian_return.php" method="GET">
-            <!-- Filter by Title -->
-            <div class="form-group">
-                <label for="title">Filter by Title:</label>
-                <input type="text" name="title" class="form-control" placeholder="Book title">
-            </div>
+        <div class="announce-div">
+            <h2>Filter Options:</h2>
+            <form action="librarian_return.php" method="GET">
+                <!-- Filter by Title -->
+                <div class="form-group">
+                    <label for="title">Filter by Title:</label>
+                    <input type="text" name="title" class="form-control" placeholder="Book title">
+                </div>
 
-            <!-- Filter by Author -->
-            <div class="form-group">
-                <label for="author">Filter by Author:</label>
-                <input type="text" name="author" class="form-control" placeholder="Author's name">
-            </div>
+                <!-- Filter by Author -->
+                <div class="form-group">
+                    <label for="author">Filter by Author:</label>
+                    <input type="text" name="author" class="form-control" placeholder="Author's name">
+                </div>
 
-            <!-- Filter by Availability -->
-            <div class="form-group">
-                <label for="availability">Filter by Availability:</label>
-                <select name="availability" class="form-control">
-                    <option value="">All Books</option>
-                    <option value="available">Available</option>
-                    <option value="checked_out">Checked Out</option>
-                </select>
-            </div>
+                <!-- Filter by Availability -->
+                <div class="form-group">
+                    <label for="availability">Filter by Availability:</label>
+                    <select name="availability" class="form-control">
+                        <option value="">All Books</option>
+                        <option value="available">Available</option>
+                        <option value="checked_out">Checked Out</option>
+                    </select>
+                </div>
 
-            <button type="submit" class="form-btn">Apply Filters</button>
-        </form>
+                <button type="submit" class="filter-btn">Apply Filters</button>
+            </form>
+        </div>
 
         <!-- Display Applied Filters -->
         <?php
