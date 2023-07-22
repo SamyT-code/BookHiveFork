@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bookhive</title>
-  <link rel="icon" type="image/x-icon" href="images/bee.png">
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookhive PHP</title>
+    <link rel="icon" type="image/x-icon" href="images/bee.png">
+    <link rel="stylesheet" href="css/main.css" /> <!-- Path references upper/css to use css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/student_landing.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
-  <header>
-    <h1 style="font-size: 30px">Bookhive</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Books</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="members/student_login.php">Student Login</a></li>
-        <li><a href="librarians/librarian_login.php">Librarian Login</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="hero">
-    <img src="images/bee.png" alt="Logo" height="100">
-    <h2 style="color: #242124">Welcome to Bookhive</h2>
-    <p style="color: #242124">Explore our vast collection of books and enhance your knowledge.</p>
-    <a href="#" class="btn">Learn More</a>
-  </section>
+    <!-- Logout Button START -->
+    <div class="container">
+    
 
-  <section id="books">
-    <h2>Popular Books</h2>
-    <div class="book">
-      <img src="book1.jpg" alt="Book 1">
-      <h3>Book 1</h3>
-      <p>Author: Author 1</p>
-      <a href="#" class="btn">Read More</a>
-    </div>
-    <div class="book">
-      <img src="book2.jpg" alt="Book 2">
-      <h3>Book 2</h3>
-      <p>Author: Author 2</p>
-      <a href="#" class="btn">Read More</a>
-    </div>
-    <div class="book">
-      <img src="book3.jpg" alt="Book 3">
-      <h3>Book 3</h3>
-      <p>Author: Author 3</p>
-      <a href="#" class="btn">Read More</a>
-    </div>
-  </section>
+        <!-- Welcome Message -->
+        <header>
+            <h1 style="text-align: center;">Welcome to the Bookhive!</h1>
+            <img src="images/bee.png" alt="Logo" height="100" style="display: block; margin: 0 auto;">
+        </header>
 
-  <footer>
-    <p>&copy; 2023 Bookhive. All rights reserved.</p>
-  </footer>
+        <!-- Navigation Menu -->
+        <nav>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="card-option">
+                        <a href="members/student_login.php" style="font-size: 24px;">Student Login</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="card-option">
+                        <a href="librarians/librarian_login.php" style="font-size: 24px;">Librarian Login</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="card-option">
+                        <a href="about.html" style="font-size: 24px;">About</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="card-option">
+                        <a href="contact.html" style="font-size: 24px;">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Add your student landing page content here -->
+    
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
-
 </html>
