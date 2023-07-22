@@ -1,3 +1,5 @@
 # BookHive
 
-Need to install nltk library: pip install nltk
+Libraries  required for installation:
+pip install nltk
+pip install scikit-learn
