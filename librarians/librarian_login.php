@@ -43,14 +43,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="../css/styles.css"> 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="scripts/lms.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#toggle").click(function(){
-                $("#accounts").fadeToggle();
-            });
-        });
-    </script>
 </head>
 <body>
     <div class="container bootstrap snippets bootdey">
