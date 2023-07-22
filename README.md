@@ -21,4 +21,4 @@ Software solution to a Library Management System, with implementation of ML and 
 
 # Libraries  required for installation:
 - pip install nltk
-- pip install scikit-learn
+- pip install -U scikit-learn
