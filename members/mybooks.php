@@ -43,10 +43,9 @@ $remaining_slots = $max_books - $number_of_books;
     <link rel="stylesheet" href="../css/main.css" /> <!-- Path references upper/css to use css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../css/landing.css" />
     <link rel="stylesheet" href="../css/mybooks.css" />
 </head>
-<body>
+<body style="background-color: #b6d0c7">
     <!-- Logout Button START -->
     <div class="container">
     <div class="logout-btn">
@@ -56,13 +55,13 @@ $remaining_slots = $max_books - $number_of_books;
         include_once 'student_navbar.php'; // Code to add navbar
     ?>
     <div class="container">
-        <h1>My Books</h1>
+        <h1 style="font-weight: bold">My Books</h1>
         <?php
         if ($number_of_books > 0) {
             echo '<div class="row">';
             while ($row = $result->fetch_assoc()) {
                 echo '<div class="col-sm-6">';
-                echo '<div class="book-card">';
+                echo '<div class="book-card" style="background-color: #fff">';
                 echo '<p><strong>Title:</strong> ' . $row['title'] . '</p>';
                 echo '<p><strong>Author:</strong> ' . $row['author'] . '</p>';
                 echo '<p><strong>Genre:</strong> ' . $row['genre'] . '</p>';

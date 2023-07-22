@@ -62,9 +62,8 @@ mysqli_close($conn);
     <link rel="stylesheet" href="../css/main.css" /> <!-- Path references upper/css to use css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../css/landing.css" />
 </head>
-<body>
+<body style="background-color: #b6d0c7">
      <!-- Logout Button START -->
     <div class="container">
     <div class="logout-btn">
@@ -73,19 +72,15 @@ mysqli_close($conn);
     <?php
         include_once 'student_navbar.php'; // Code to add navbar
     ?>
-
-        <header>
-            <h1>Welcome <?php echo htmlspecialchars($firstName . "!"); ?></h1>
-        </header>
-
-        <header>
-            <h2>Buzz into Knowledge: Unleash Your Inner Bookworm!</h2>
-        </header>
+        <div class="announce-div">
+            <header><h1>Welcome <?php echo htmlspecialchars($firstName . "!"); ?></h1></header>
+            <header><h2>Buzz into Knowledge: Unleash Your Inner Bookworm!</h2></header>
+        </div>
 
         <div class="container">
             <!-- Profile Form -->
             <header>
-                <h1>Profile</h1>
+                <h1 style="font-weight: bold">Profile</h1>
             </header>
             <form action="profile.php" method="POST" onsubmit="return confirmUpdate()">
                 <div class="form-group">
@@ -97,7 +92,7 @@ mysqli_close($conn);
                     <input type="text" name="last_name" id="last_name" class="form-control" value="<?php echo htmlspecialchars($lastName); ?>" required>
                 </div>
                 <div class="form-group">
-                    <button type="submit" name="submit" class="btn btn-primary">Update Profile</button>
+                    <button type="submit" name="submit" class="form-btn">Update Profile</button>
                 </div>
             </form>
             <?php

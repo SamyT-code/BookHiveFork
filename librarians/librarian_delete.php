@@ -110,9 +110,8 @@ if (isset($_POST['delete'])) {
     <link rel="stylesheet" href="../css/main.css" /> <!-- Path references upper/css to use css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../css/landing.css" />
 </head>
-<body>
+<body style="background-color: #b6d0c7">
     <!-- Logout Button START -->
     <div class="container">
     <div class="logout-btn">
@@ -123,43 +122,45 @@ if (isset($_POST['delete'])) {
         include_once 'librarian_navbar.php';
     ?>
     
-    <h1>Delete Books</h1>
+    <h1 style="font-weight: bold">Delete Books</h1>
 
     <!-- Search Bar -->
     <form class="form-inline" action="librarian_delete.php" method="GET">
         <div class="form-group">
             <input type="text" name="search" class="form-control" placeholder="Search by author, title, or description" size="50">
         </div>
-        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="submit" class="form-btn">Search</button>
     </form>
 
     <!-- Filter Options -->
-    <h2>Filter Options:</h2>
-    <form action="librarian_delete.php" method="GET">
-        <!-- Filter by Title -->
-        <div class="form-group">
-            <label for="title">Filter by Title:</label>
-            <input type="text" name="title" class="form-control" placeholder="Book title">
-        </div>
+    <div class="announce-div">
+        <h2>Filter Options:</h2>
+        <form action="librarian_delete.php" method="GET">
+            <!-- Filter by Title -->
+            <div class="form-group">
+                <label for="title">Filter by Title:</label>
+                <input type="text" name="title" class="form-control" placeholder="Book title">
+            </div>
 
-        <!-- Filter by Author -->
-        <div class="form-group">
-            <label for="author">Filter by Author:</label>
-            <input type="text" name="author" class="form-control" placeholder="Author's name">
-        </div>
+            <!-- Filter by Author -->
+            <div class="form-group">
+                <label for="author">Filter by Author:</label>
+                <input type="text" name="author" class="form-control" placeholder="Author's name">
+            </div>
 
-        <!-- Filter by Availability -->
-        <div class="form-group">
-            <label for="availability">Filter by Availability:</label>
-            <select name="availability" class="form-control">
-                <option value="">All Books</option>
-                <option value="available">Available</option>
-                <option value="checked_out">Checked Out</option>
-            </select>
-        </div>
+            <!-- Filter by Availability -->
+            <div class="form-group">
+                <label for="availability">Filter by Availability:</label>
+                <select name="availability" class="form-control">
+                    <option value="">All Books</option>
+                    <option value="available">Available</option>
+                    <option value="checked_out">Checked Out</option>
+                </select>
+            </div>
 
-        <button type="submit" class="btn btn-primary">Apply Filters</button>
-    </form>
+            <button type="submit" class="filter-btn">Apply Filters</button>
+        </form>
+    </div>
 
     <!-- Display Applied Filters -->
     <?php
