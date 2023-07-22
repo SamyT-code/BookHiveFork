@@ -39,10 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Login</title>
     <link rel="icon" type="image/x-icon" href="images/bee.png">
-    <link rel="stylesheet" href="../css/main.css"> <!-- Path references upper/css to use css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/login.css" />
-    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="scripts/lms.js"></script>
@@ -59,23 +57,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="container bootstrap snippets bootdey">
         <br>
-        <h1 class="bio-graph-heading dcms-header" style="font-size: 30px;">Bookhive</h1>
+        <header class="sign-in-header">Bookhive</header>
         <br>
-        <h2>Enter Student Login Details</h2>
+        <h2>
+            <img src="../images/bee.png" alt="Logo" height="60" style="margin-right: 10px"> Enter Student Login Details
+        </h2>
         <h3 class="error"><?php echo $err; ?></h3>
         <h4 class="form-signin-heading"><?php echo $msg; ?></h4>
 
         <form class="form-signin" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
             <h4>Email</h4>
             <input type="email" class="form-control" name="email" placeholder="Enter email" maxlength="255" required>
-            <span class="error"> * <?php echo $email == "" ? 'Email is required!' : ''; ?> </span><br>
+            <span class="error"> * <?php echo $email == "" ? 'Email is required!' : ''; ?> </span><br><br>
             
             <h4>Password</h4>
             <input type="password" class="form-control" name="password" placeholder="Enter password" maxlength="255" required>
             <span class="error"> * <?php echo $password == "" ? 'Password is required!' : ''; ?> </span><br>
 
             <br><br>
-            <button class="btn btn-lg btn-primary btn-block btn-warning" type="submit" name="login">Login</button>
+            <button class="btn" type="submit" name="login">Login</button>
         </form> 
 
     </div>
