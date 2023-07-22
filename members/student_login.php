@@ -38,19 +38,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Login</title>
-    <link rel="icon" type="image/x-icon" href="images/bee.png">
+    <link rel="icon" type="image/x-icon" href="../images/bee.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="scripts/lms.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#toggle").click(function(){
-                $("#accounts").fadeToggle();
-            });
-        });
-    </script>
 </head>
 
 <body>
