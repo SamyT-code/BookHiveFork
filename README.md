@@ -1,8 +1,8 @@
-# BookHive
+# BookHive Library Management System with ML and MLP
 Software solution to a Library Management System, with the implementation of ML and NLP.
-Deployment website (requires Samy to run XAMPP in his machine which is being used as a server with ngrok): [https://272f-173-206-86-138.ngrok-free.app/bookhive/Bookhive/](https://fcc7-173-206-86-138.ngrok-free.app/Bookhive/BookHive/)
+[Deployment website](https://fcc7-173-206-86-138.ngrok-free.app/Bookhive/BookHive/) (requires Samy to run XAMPP in his machine which is being used as a server with ngrok) 
 
-Demo Video: https://uottawa-my.sharepoint.com/personal/kzahr091_uottawa_ca/_layouts/15/guestaccess.aspx?share=Ebkgp4FNks5OgQsy-iVQA8YBbNZyhfWJ3gn3j0PLlIrCOg
+[Demo Video](https://uottawa-my.sharepoint.com/personal/kzahr091_uottawa_ca/_layouts/15/guestaccess.aspx?share=Ebkgp4FNks5OgQsy-iVQA8YBbNZyhfWJ3gn3j0PLlIrCOg)
 
 # Authors
 - Lara Lim #300163562 (llim067@uottawa.ca)
