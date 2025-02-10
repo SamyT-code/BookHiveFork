@@ -64,7 +64,7 @@ if (!isset($_SESSION['email'])) {
                     if ($output === "Unknown") {
                         echo "<h3>Personalized Recommendations</h3>";
                         echo "<p>Your thoughts: " . htmlspecialchars($userThoughts) . "</p>";
-                        echo "<p>Unfortunately, our recommendation system is currently unavailable.</p>";
+                        echo "<p>Unfortunately, our recommendation system is currently unavailable online.</p>";
                         echo "<p>You can view a demo of this project here: 
           <a href='https://uottawa-my.sharepoint.com/personal/kzahr091_uottawa_ca/_layouts/15/guestaccess.aspx?share=Ebkgp4FNks5OgQsy-iVQA8YBbNZyhfWJ3gn3j0PLlIrCOg' target='_blank'>
           Click here to see the demo</a>.</p>";
