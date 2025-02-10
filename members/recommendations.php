@@ -55,6 +55,9 @@ if (!isset($_SESSION['email'])) {
 
                     $a = escapeshellcmd('python auto-categorization.py "' . $userThoughts . '"');
                     $output = shell_exec($a); //calling the python NLP script
+                    if ($output === null) {
+                        die("Error: shell_exec() is disabled on this server.");
+                    }
                     if (!empty($output)) {
                         $output = trim($output);
                     } else {
