@@ -1,6 +1,6 @@
 # BookHive Library Management System with ML and MLP
 Software solution to a Library Management System, with the implementation of ML and NLP.
-[Deployment website](https://8732-173-206-86-138.ngrok-free.app/bookhive/Bookhive/) (requires Samy to run XAMPP in his machine which is being used as a server with ngrok) 
+[Deployment website](https://bookhivefork.onrender.com/) 
 
 [Demo Video](https://uottawa-my.sharepoint.com/personal/kzahr091_uottawa_ca/_layouts/15/guestaccess.aspx?share=Ebkgp4FNks5OgQsy-iVQA8YBbNZyhfWJ3gn3j0PLlIrCOg)
 
