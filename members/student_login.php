@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
 
     // Perform a query to check if the user exists
-    $query = "SELECT * FROM members WHERE email='$email' AND password='$password'";
+    $query = "SELECT * FROM Members WHERE email='$email' AND password='$password'";
     $result = mysqli_query($conn, $query);
 
     if (mysqli_num_rows($result) === 1) {
@@ -33,6 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,26 +58,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h3 class="error"><?php echo $err; ?></h3>
         <h4 class="form-signin-heading"><?php echo $msg; ?></h4>
 
-        <form class="form-signin" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+        <form class="form-signin" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"
+            method="post">
             <h4>Email</h4>
-            <input type="email" class="form-control" name="email" placeholder="Enter email (ex: alice.johnson@bookhive.com)" maxlength="255" required>
+            <input type="email" class="form-control" name="email"
+                placeholder="Enter email (ex: alice.johnson@bookhive.com)" maxlength="255" required>
             <span class="error"> * <?php echo $email == "" ? 'Email is required!' : ''; ?> </span><br><br>
-            
+
             <h4>Password</h4>
-            <input type="password" class="form-control" name="password" placeholder="Enter password (ex: password123)" maxlength="255" required>
+            <input type="password" class="form-control" name="password" placeholder="Enter password (ex: password123)"
+                maxlength="255" required>
             <span class="error"> * <?php echo $password == "" ? 'Password is required!' : ''; ?> </span><br>
 
             <br><br>
             <button class="btn" type="submit" name="login">Login</button>
-        </form> 
+        </form>
 
     </div>
 
 </body>
 <script>
-    // this if statement turns off the "Confirm Form Resubmission" and prevents multiple form submissions
-    if (window.history.replaceState) {
-        window.history.replaceState(null, null, window.location.href);
-    }
+// this if statement turns off the "Confirm Form Resubmission" and prevents multiple form submissions
+if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+}
 </script>
+
 </html>
