@@ -54,15 +54,22 @@ if (!isset($_SESSION['email'])) {
                 if (!empty($userThoughts)) {
 
                     $a = escapeshellcmd('python auto-categorization.py "' . $userThoughts . '"');
-                    $output = shell_exec($a); //calling the python NLP script
-                    if ($output === null) {
-                        die("Error: shell_exec() is disabled on this server.");
+                    $output = shell_exec($a); // Calling the Python NLP script
+
+                    if ($output === null || empty($output)) {
+                        $output = "Unknown"; // Default category if the script fails
                     }
-                    if (!empty($output)) {
-                        $output = trim($output);
-                    } else {
-                        $output = "Unknown"; // Default value if Python script fails
+
+                    // Display user-friendly message if recommendations are unavailable
+                    if ($output === "Unknown") {
+                        echo "<h3>Personalized Recommendations</h3>";
+                        echo "<p>Your thoughts: " . htmlspecialchars($userThoughts) . "</p>";
+                        echo "<p>Unfortunately, our recommendation system is currently unavailable.</p>";
+                        echo "<p>You can view a demo of this project here: 
+          <a href='https://uottawa-my.sharepoint.com/personal/kzahr091_uottawa_ca/_layouts/15/guestaccess.aspx?share=Ebkgp4FNks5OgQsy-iVQA8YBbNZyhfWJ3gn3j0PLlIrCOg' target='_blank'>
+          Click here to see the demo</a>.</p>";
                     }
+
 
                     $sql = "SELECT * FROM Books WHERE genre LIKE '%$output%'";
                     $result = mysqli_query($conn, $sql);
